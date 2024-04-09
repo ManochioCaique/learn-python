@@ -13,6 +13,9 @@ str()
 bool()
 
 #Usado para saber o scopo
-dir()
+#dir()
 #Invoca o sistema de ajuda 
-help()
+#help(str)
+
+
+
