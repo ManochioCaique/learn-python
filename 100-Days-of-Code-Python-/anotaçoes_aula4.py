@@ -8,6 +8,25 @@ print(random_integer)
 #float
 random_float = random.random()
 print(random_float)
+
+
+import my_module
+random_integer = random.randint(1, 10)
+
+print(random_integer)
+
+print(my_module.my_favourite_number)
+
+#Criando randam float number 
+#função randam usada para gerar o numeros, inclui o numero que começa e não inclui o numero que termina
+random_number_0_to_1 = random.random() *10 #posso multiplicar os dois numeros 
+
+print(random_number_0_to_1)
+
+random_float = random.uniform(1, 10)
+print(random_float)
+
+
 #Ativdade gerar aleatóriamente cara ou coroa
 import random
 H = "Heads"
@@ -26,6 +45,7 @@ print(states_of_america[2])
 states_of_america.append("ESTADO NOVO ")
 
 #Atividade de selecionar um elemento da lista de forma aleatória 
+#Opção 1
 import random
 
 names_string = input("Give me everybody's names, separated by a comma. ")
@@ -34,3 +54,27 @@ x = len(names)
 number = random.randint(0, x - 1)
 names_salve = names[number]
 print(f"{names_salve} is going to buy the meal today!")
+
+#Opção 2
+friends  = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
+
+print(friends[random.randint(0,4)])
+
+
+
+#Opção 3
+print(random.choice(friends))
+
+#Exercicios ...
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+fruits[-1] = "Melons"
+print(fruits)
+
+
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+ 
+dirty_dozen = [fruits, vegetables]
+ 
+print(dirty_dozen[1][1])
+
